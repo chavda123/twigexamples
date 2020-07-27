@@ -1,0 +1,3 @@
+{% if date(user.created_at) < date('-5years') %}
+    <p>{{ user.name }} is a senior user</p>
+{% endif %} 

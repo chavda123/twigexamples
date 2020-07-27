@@ -1,0 +1,15 @@
+{% set sorted = words | sort %}
+
+<ul>
+{% for word in sorted %}
+    <li>{{ word }}</li>
+{% endfor %}
+</ul>
+<h1>verbatim means not pasrsed anything it display same code like : <pre></h1>
+{% verbatim %}
+    <ul>
+    {% for word in words %}
+        <li>{{ word }}</li>
+    {% endfor %}
+    </ul>
+{% endverbatim %}

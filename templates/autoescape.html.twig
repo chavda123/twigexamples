@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoexcape</title>
+</head>
+
+<body>
+
+    <p>
+The data is {{ data }}
+</p>
+
+<p>
+The data is {{ data | raw }}
+</p>
+If autoescaping is enabled, we can show the raw input with the raw filter.
+
+<p>
+The data is &lt;script src=&#039;http::/example.com/nastyscript.js&#039;&gt;&lt;/script&gt;
+</p>
+
+<p>
+The data is <script src='http::/example.com/nastyscript.js'></script>
+</p>
+
+</body>
+
+</html>
+
